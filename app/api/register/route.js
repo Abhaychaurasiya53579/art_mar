@@ -27,7 +27,7 @@ export async function POST (req) {
     if (!file) {
       return NextResponse.json({ message: "No file uploaded" }, { status: 400 })
     }
-    const clouddata=NULL;
+    var clouddata=null;
     const dat = new FormData();
     dat.append("file",file);
     dat.append("upload_preset", "mycloud");
