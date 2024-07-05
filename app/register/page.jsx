@@ -128,14 +128,14 @@ const Register = () => {
             Register
           </button>
         </form>
-        <button
+        {/* <button
           type="button"
           onClick={loginWithGoogle}
           className="google"
         >
           <p>Log In with Google</p>
           <FcGoogle />
-        </button>
+        </button> */}
         <a href="/login">Already have an account? Log In Here</a>
       </div>
     </div>
