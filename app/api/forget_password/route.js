@@ -21,7 +21,7 @@ export async function POST(request) {
 
 
     const reset_token = existingUser.create_reset_password_token();
-    await  existingUser.save();
+    await  existingser.save();
 
     // Send email with password reset link
     const transporter = nodemailer.createTransport({
@@ -38,7 +38,7 @@ export async function POST(request) {
       subject: 'Password Reset',
       text: `You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n`
         + `Please click on the following link, or paste this into your browser to complete the process:\n\n`
-        + `https://art-market-omega.vercel.app/${reset_token}\n\n`
+        + `https://art-market-omega.vercel.app/reset-password/${reset_token}\n\n`
         + `If you did not request this, please ignore this email and your password will remain unchanged.\n`,
     };
 
