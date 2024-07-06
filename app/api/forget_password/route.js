@@ -21,7 +21,7 @@ export async function POST(request) {
 
 
     const reset_token = existingUser.create_reset_password_token();
-    await  existingser.save();
+    await  existingUser.save();
 
     // Send email with password reset link
     const transporter = nodemailer.createTransport({
