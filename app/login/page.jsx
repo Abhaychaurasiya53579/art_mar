@@ -68,6 +68,8 @@ const Login = () => {
           <FcGoogle />
         </button> */}
         <a href="/register">Don't have an account? Sign In Here</a>
+        <a href="/forgot_password">Forgot Password</a>
+
       </div>
     </div>
   );
