@@ -12,13 +12,13 @@ export const POST = async (req, res) => {
         payment_method_types: ["card"],
         billing_address_collection: "auto",
         shipping_options: [
-          { shipping_rate: "shr_1OMubtDgraNiyvtnPzxjMBKT" },
-          { shipping_rate: "shr_1MfufhDgraNiyvtnDGef2uwK" },
+          { shipping_rate: "shr_1PdwToDkY97yPLbH1wE9nYXw" },
+          { shipping_rate: "shr_1PdwXzDkY97yPLbHr38zKPHF" },
         ],
         line_items: cart?.map((item) => {
           return {
             price_data: {
-              currency: "cad",
+              currency: "usd",
               product_data: {
                 name: item.title,
                 images: [`${req.headers.get("origin")}/${item.image}`],
